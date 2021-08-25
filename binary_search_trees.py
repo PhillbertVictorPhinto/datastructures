@@ -71,8 +71,6 @@ tree.insert(20)
 tree.insert(170)
 tree.insert(15)
 tree.insert(1)
-tree.remove(170)
-tree.remove(20)
 v2=tree.lookup(9)
 print(v2)
 
