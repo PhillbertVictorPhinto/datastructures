@@ -57,41 +57,7 @@ class BinarySearchTree:
             self.printt(curr_node.right)
 
 
-    def remove(self, value):
-        if self.root == None:
-            return "There is no BST"
-        temp = self.root
-        prev = temp
-
-        while (True):
-
-            if value > temp.value:
-                prev = temp
-                temp = temp.right
-
-            elif value < temp.value:
-                prev = temp
-                temp = temp.left
-
-            elif value == temp.value:
-
-                if temp.left != None and temp.right != None:
-                    temp.value = temp.right.value
-                    temp.right = None
-                    return
-
-                if temp.right==None and temp.left!=None:
-                    temp.value =temp.left.value
-                    temp.left = None
-                    return
-
-                if temp.value > prev.value:
-                    prev.right = None
-                else:
-                    prev.left = None
-
-                return
-
+   
 
 
 
